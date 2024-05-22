@@ -61,6 +61,59 @@
       .menu-item:hover {
         background-color: #3acf1557;
       }
+      .image-set {
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+      }
+      .box {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .body {
+        display: flex;
+        flex-direction: column;
+        font-family: raleway;
+        gap: 2px;
+      }
+      .headname {
+        display: flex;
+        justify-content: space-between;
+      }
+      .total {
+        text-decoration: underline;
+      }
+      .price {
+        font-weight: 700;
+      }
+      .apname {
+        font-weight: 700;
+      }
+      .container {
+        margin-top: 32px;
+        margin-left: 64px;
+        margin-right: 64px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        place-items: center;
+        gap: 24px;
+      }
+
+      .box:hover .image-set img {
+        transform: scale(1.2);
+        transform-origin: center;
+        transition: 1s;
+      }
     </style>
   </head>
   <body>
@@ -84,7 +137,218 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="container">
+        <div class="box">
+          <div class="image-set">
+            <img src="./home.jpeg" class="image" alt="home pic" />
+          </div>
+          <div class="body">
+            <div class="headname">
+              <div class="apname">Apartment in puri</div>
+              <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>4.77 (47)</span>
+              </div>
+            </div>
+            <div class="headname">
+              <div>Subhankar Dutta</div>
+            </div>
+            <div class="headname">
+              <div>6-min Drive</div>
+            </div>
+            <div class="headname">
+              <div>
+                <span class="price">₹1,683</span> night .
+                <span class="total">₹17,032 total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image-set">
+            <img src="./home.jpeg" class="image" alt="home pic" />
+          </div>
+          <div class="body">
+            <div class="headname">
+              <div class="apname">Apartment in puri</div>
+              <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>4.77 (47)</span>
+              </div>
+            </div>
+            <div class="headname">
+              <div>Subhankar Dutta</div>
+            </div>
+            <div class="headname">
+              <div>6-min Drive</div>
+            </div>
+            <div class="headname">
+              <div>
+                <span class="price">₹1,683</span> night .
+                <span class="total">₹17,032 total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image-set">
+            <img src="./home.jpeg" class="image" alt="home pic" />
+          </div>
+          <div class="body">
+            <div class="headname">
+              <div class="apname">Apartment in puri</div>
+              <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>4.77 (47)</span>
+              </div>
+            </div>
+            <div class="headname">
+              <div>Subhankar Dutta</div>
+            </div>
+            <div class="headname">
+              <div>6-min Drive</div>
+            </div>
+            <div class="headname">
+              <div>
+                <span class="price">₹1,683</span> night .
+                <span class="total">₹17,032 total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image-set">
+            <img src="./home.jpeg" class="image" alt="home pic" />
+          </div>
+          <div class="body">
+            <div class="headname">
+              <div class="apname">Apartment in puri</div>
+              <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>4.77 (47)</span>
+              </div>
+            </div>
+            <div class="headname">
+              <div>Subhankar Dutta</div>
+            </div>
+            <div class="headname">
+              <div>6-min Drive</div>
+            </div>
+            <div class="headname">
+              <div>
+                <span class="price">₹1,683</span> night .
+                <span class="total">₹17,032 total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image-set">
+            <img src="./home.jpeg" class="image" alt="home pic" />
+          </div>
+          <div class="body">
+            <div class="headname">
+              <div class="apname">Apartment in puri</div>
+              <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>4.77 (47)</span>
+              </div>
+            </div>
+            <div class="headname">
+              <div>Subhankar Dutta</div>
+            </div>
+            <div class="headname">
+              <div>6-min Drive</div>
+            </div>
+            <div class="headname">
+              <div>
+                <span class="price">₹1,683</span> night .
+                <span class="total">₹17,032 total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image-set">
+            <img src="./home.jpeg" class="image" alt="home pic" />
+          </div>
+          <div class="body">
+            <div class="headname">
+              <div class="apname">Apartment in puri</div>
+              <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>4.77 (47)</span>
+              </div>
+            </div>
+            <div class="headname">
+              <div>Subhankar Dutta</div>
+            </div>
+            <div class="headname">
+              <div>6-min Drive</div>
+            </div>
+            <div class="headname">
+              <div>
+                <span class="price">₹1,683</span> night .
+                <span class="total">₹17,032 total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image-set">
+            <img src="./home.jpeg" class="image" alt="home pic" />
+          </div>
+          <div class="body">
+            <div class="headname">
+              <div class="apname">Apartment in puri</div>
+              <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>4.77 (47)</span>
+              </div>
+            </div>
+            <div class="headname">
+              <div>Subhankar Dutta</div>
+            </div>
+            <div class="headname">
+              <div>6-min Drive</div>
+            </div>
+            <div class="headname">
+              <div>
+                <span class="price">₹1,683</span> night .
+                <span class="total">₹17,032 total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image-set">
+            <img src="./home.jpeg" class="image" alt="home pic" />
+          </div>
+          <div class="body">
+            <div class="headname">
+              <div class="apname">Apartment in puri</div>
+              <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>4.77 (47)</span>
+              </div>
+            </div>
+            <div class="headname">
+              <div>Subhankar Dutta</div>
+            </div>
+            <div class="headname">
+              <div>6-min Drive</div>
+            </div>
+            <div class="headname">
+              <div>
+                <span class="price">₹1,683</span> night .
+                <span class="total">₹17,032 total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
