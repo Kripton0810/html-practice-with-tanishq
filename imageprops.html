@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .image {
+        width: 400px;
+        filter: sepia(100%);
+      }
+      .box {
+        width: 400px;
+        height: 400px;
+        background-color: aqua;
+        border-radius: 50%;
+        border: 18px solid red;
+        box-shadow: inset 10px 10px 10px blue, 10px 10px 10px blue,
+          30px 30px 40px rgb(0, 76, 255);
+      }
+      .letters {
+        font-weight: 900;
+        font-family: "Poppins", "Inter", "Courier New", Courier, monospace;
+        text-transform: uppercase;
+        transition: 2px ease-in;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        width: 600px;
+        height: 5.5rem;
+        left: 50%;
+        display: flex;
+        gap: 35px;
+        justify-content: center;
+        align-items: center;
+      }
+      .letters:hover .word {
+        animation-play-state: running;
+      }
+      .word {
+        position: relative;
+        top: 0px;
+        left: 0;
+        font-size: 5rem;
+        animation: amin 3s ease 1;
+        animation-play-state: paused;
+        filter: blur(0px);
+        animation-fill-mode: forwards;
+      }
+      .word:nth-child(1) {
+        animation-delay: 0.5s;
+      }
+      .word:nth-child(2) {
+        animation-delay: 1s;
+      }
+      .word:nth-child(3) {
+        animation-delay: 1.5s;
+      }
+      .word:nth-child(4) {
+        animation-delay: 2s;
+      }
+      .word:nth-child(5) {
+        animation-delay: 2.5s;
+      }
+      .word:nth-child(6) {
+        animation-delay: 3s;
+      }
+
+      @keyframes amin {
+        0% {
+          top: 0px;
+          filter: blur(0px);
+          font-size: 5rem;
+        }
+        50% {
+          top: -140px;
+          left: -100px;
+          filter: blur(10px);
+          font-size: 2rem;
+        }
+        100% {
+          top: -30px;
+          left: -100px;
+          filter: blur(20px);
+          font-size: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="./home.jpeg" width="400" alt="" />
+    <img src="./home.jpeg" class="image" alt="" /> -->
+
+    <!-- <div class="box"></div> -->
+
+    <div class="letters">
+      <div class="word">T</div>
+      <div class="word">A</div>
+      <div class="word">N</div>
+      <div class="word">I</div>
+      <div class="word">S</div>
+      <div class="word">H</div>
+    </div>
+  </body>
+</html>
